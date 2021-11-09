@@ -336,7 +336,7 @@ header{
        background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/banner/slide-banner3.png);
     background-size: cover;
     height: 70vh;
-    margin-top: 130px;
+   /* margin-top: 130px;*/
     background-position-y: 20%;
 }
 .web-banner1{

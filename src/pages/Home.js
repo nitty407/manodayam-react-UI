@@ -1,13 +1,103 @@
 import React from 'react'
+import Slider from "react-slick";
 import { Link } from 'react-router-dom'
 import Login from './Login'
 
 export default function Home() {
+    var settings = {
+        dots: false,
+            arrows: true,
+            infinite: true,
+            autoplay: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                       infinite: true,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        infinite: true,
+                        slidesToScroll: 1
+                    }
+                }
+             
+            ]
+        };
+
+
+
+
+     //service slider
+
+     
+     const settingstwo = {
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    }
+
+
+
+
+
+
+
     return (
        <>
 
 <Login />
 <div className="web-banner-slider">
+<Slider {...settings}>
         <div className="web-banner web-banner3 mb-50">
             <div className="container">
                 <div className="web-banner-content">
@@ -44,7 +134,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    
+        </Slider>
     </div>
 
     <div className="video-section mb-50">
@@ -146,8 +236,9 @@ export default function Home() {
                         congue amet malesuada.</p>
                 </div>
             </div>
-
+           
             <div className="service-slide">
+            <Slider {...settingstwo}>
                 <div className="col-lg-12">
                     <div className="service-card hvr-float-shadow">
                         <img src="assets/image/depression.png" alt=""/>
@@ -258,7 +349,9 @@ export default function Home() {
                             <button className="btn-web hvr-float-shadow"><Link to="/healthheal">get solution</Link></button>
                     </div>
                 </div>
+                </Slider>
             </div>
+        
         </div>
     </div>
 
@@ -428,7 +521,8 @@ export default function Home() {
                            
 
                             <div className="col-lg-12">
-                                <buttton className="btn hvr-float-shadow"><Link to="/counsultvideo">Book appointment</Link></buttton>
+                           <buttton className="btn hvr-float-shadow"><Link to="/counsultvideo">Book appointment</Link></buttton>
+
                             </div>
                            </div>
 
@@ -527,8 +621,9 @@ export default function Home() {
                         congue amet malesuada.</p>
                 </div>
             </div>
-
+            
             <div className="service-slide">
+            <Slider {...settingstwo}>
                 <div className="col-lg-12">
                     <div className="service-card spritual-card">
                         <img src="assets/image//vedic.png" alt=""/>
@@ -581,7 +676,9 @@ export default function Home() {
                             <button className="qst-show btn-web hvr-float-shadow"><Link to="/spirituality">
             Get your solution</Link></button>                    </div>
                 </div>
+                </Slider>
             </div>
+          
         </div>
     </div>
 
