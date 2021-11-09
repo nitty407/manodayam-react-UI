@@ -428,7 +428,7 @@ export default function Home() {
                            
 
                             <div className="col-lg-12">
-                                <buttton className="btn hvr-float-shadow"><Link to="/consultvideo">Book appointment</Link></buttton>
+                                <buttton className="btn hvr-float-shadow"><Link to="/counsultvideo">Book appointment</Link></buttton>
                             </div>
                            </div>
 
