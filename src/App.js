@@ -26,7 +26,7 @@ function App() {
 
     
 <Routes>
-<Route path="/home" element={<Home/>}exact />
+<Route path="/" element={<Home/>}exact />
 <Route path="/support" element={<Support/>}exact />
 <Route path="/library" element={<Library/>}exact />
 <Route path="/research" element={<Research/>}exact />
