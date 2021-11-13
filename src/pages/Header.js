@@ -12,7 +12,7 @@ export default function Header() {
             <div className="row">
                 <div className="col-lg-6 col-sm-4">
                     <div className="top-logo">
-                    <Link to="/home"><img src="assets/image/logo.png" alt=""/></Link>
+                    <Link to="/"><img src="assets/image/logo.png" alt=""/></Link>
                     </div>
                 </div>
                 <div className="col-lg-6 col-sm-8">
@@ -40,7 +40,7 @@ export default function Header() {
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav nav-custom">
                         <li className="nav-item">
-                        <Link to="/home" className="nav-link">Home</Link>
+                        <Link to="/" className="nav-link">Home</Link>
                       
                         </li>
                         <li className="nav-item">
