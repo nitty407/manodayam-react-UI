@@ -723,7 +723,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="col-lg-10 offset-1">
+                <div className="col-lg-10 offset-1 ">
                     <div className="library-card">
                         <div className="row">
                             <div className="col-lg-5">
